@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+    <!-- adding font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- adding font end here -->
+    <!-- adding logo here -->
+    <link rel="icon" href="Images/logo.png" />
+    <!-- logo end here -->
+    <!-- my css start here -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- my css end here -->
+
+    <!-- adding icons -->
+    <script
+      src="https://kit.fontawesome.com/1adaaa4224.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- adding icons end here -->
+  </head>
+  <body>
+    <audio id="sound"></audio>
+    <!-- dictionary container start here -->
+    <div class="container">
+      <!-- search bar start here -->
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="Type your Text here"
+          id="input-text"
+          class="search-bar-input"
+        />
+        <button id="search-btn">Search</button>
+      </div>
+      <!-- search bar end here -->
+      <!-- dictionary text here -->
+      <!-- text and audio start here -->
+      <div class="main-container">
+        <div class="text-and-audio">
+          <div id="text">
+            <div id="main-text">Sample text</div>
+            <div id="non-main-text">Sample text</div>
+          </div>
+
+          <div class="audio-div">
+            <button class="audio-button">
+              <i class="fa-solid fa-volume-high fa-xl"></i>
+            </button>
+          </div>
+        </div>
+        <!-- text and audio end here -->
+        <!-- dictionary text end here -->
+        <!-- meaning start here -->
+        <div class="meaning-div">
+          <span id="meaning-span-text">Meaning: </span>
+          <span id="js-meaning"> not found </span>
+        </div>
+        <div class="meaning-div">
+          <span id="meaning-span-text">Meaning 2: </span>
+          <span id="js-meaning2"> not found </span>
+        </div>
+        <!-- meaning end here -->
+        <!-- example start here -->
+        <div class="example-div">
+          <div class="bar"></div>
+          <div class="example-text">
+            <span id="example-span-text">Example: </span>
+            <span id="js-example"> not found </span>
+          </div>
+        </div>
+        <div class="example-div">
+          <div class="bar"></div>
+          <div class="example-text">
+            <span id="example-span-text">Example 2: </span>
+            <span id="js-example2"> not found </span>
+          </div>
+        </div>
+        <!-- example end here -->
+      </div>
+    </div>
+    <!-- dictionary container end here -->
+    <!-- my js start here -->
+    <script src="JS/script.js"></script>
+    <!-- my js end here -->
+  </body>
+</html>
